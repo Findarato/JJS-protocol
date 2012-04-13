@@ -6,11 +6,10 @@
 main(){
 
 	int std, lfd, len, i, j, status, sport;
-	char str[1000], frame[20], temp[20], ack[20];
+	char frame[20], temp[20], ack[20];
 	struct sockaddr_in saddr, caddr;
-	char * data;
-
-	data = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+	char * str;
+	str = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 	sport = 8888;
 	
 
@@ -34,10 +33,9 @@ main(){
 	printf("Enter the text: ");
 	scanf("%s", str);i = 0;
 	*/
+	i=0;
 
-	printf(data);
 
-	//str = data;
 	
 	while(i<strlen(str)){
 		memset(frame, 0, 20);
